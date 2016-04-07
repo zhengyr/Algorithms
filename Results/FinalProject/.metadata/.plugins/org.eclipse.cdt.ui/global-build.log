@@ -1,0 +1,2318 @@
+02:04:30 **** Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: Cross GCC Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:09:36 **** Clean-only build of configuration Debug for project Map ****
+make clean 
+rm -rf  ./Map.o  ./Map.d  Map
+ 
+02:09:36 **** Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:10:30 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:10:46 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:42:24 **** Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:53:10: fatal error: 'Tour.h' file not found
+#include "Tour.h"
+         ^
+1 error generated.
+make: *** [Map.o] Error 1
+20:43:06 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:53:10: fatal error: 'Tour.h' file not found
+#include "Tour.h"
+         ^
+1 error generated.
+make: *** [Map.o] Error 1
+20:43:21 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:53:10: fatal error: 'Tour.h' file not found
+#include "Tour.h"
+         ^
+1 error generated.
+make: *** [Map.o] Error 1
+20:43:27 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:53:10: fatal error: 'Tour.h' file not found
+#include "Tour.h"
+         ^
+1 error generated.
+make: *** [Map.o] Error 1
+20:49:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:11:45 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:54:6: error: variable length array declaration not allowed at file scope
+node AdjList[nV];
+     ^       ~~
+../Map.c:75:6: error: variable length array declaration not allowed at file scope
+node heap[nE];
+     ^    ~~
+2 errors generated.
+make: *** [Map.o] Error 1
+01:21:46 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:06:37 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:81:23: warning: ordered comparison between pointer and integer ('node' (aka 'struct adjnode *') and 'int')
+                if (heap[parentPos] < weight) {
+                    ~~~~~~~~~~~~~~~ ^ ~~~~~~
+../Map.c:97:3: warning: implicit declaration of function 'percDown' is invalid in C99 [-Wimplicit-function-declaration]
+                percDown(0);
+                ^
+../Map.c:103:6: error: conflicting types for 'percDown'
+void percDown(int i) {
+     ^
+../Map.c:97:3: note: previous implicit declaration is here
+                percDown(0);
+                ^
+2 warnings and 1 error generated.
+make: *** [Map.o] Error 1
+12:07:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:81:23: warning: ordered comparison between pointer and integer ('node' (aka 'struct adjnode *') and 'int')
+                if (heap[parentPos] < weight) {
+                    ~~~~~~~~~~~~~~~ ^ ~~~~~~
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:09:40 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:18:25 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:23:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:23:53 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:24:57 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:25:10 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:35:39 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:36:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:146:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+12:39:09 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:146:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+18:31:33 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:164:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+18:31:51 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:53:40 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:97:6: warning: unused variable 'weight' [-Wunused-variable]
+        int weight = totalCost[currentNodeNum];
+            ^
+../Map.c:141:5: error: variable length array declaration not allowed at file scope
+int path[nV];
+    ^    ~~
+1 warning and 1 error generated.
+make: *** [Map.o] Error 1
+20:54:04 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:97:6: warning: unused variable 'weight' [-Wunused-variable]
+        int weight = totalCost[currentNodeNum];
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+20:54:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:97:6: warning: unused variable 'weight' [-Wunused-variable]
+        int weight = totalCost[currentNodeNum];
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+20:55:00 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:55:46 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:56:48 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:97:6: warning: unused variable 'weight' [-Wunused-variable]
+        int weight = totalCost[currentNodeNum];
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+20:56:54 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:57:05 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+20:57:20 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:97:6: warning: unused variable 'weight' [-Wunused-variable]
+        int weight = totalCost[currentNodeNum];
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+20:58:39 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:96:6: warning: unused variable 'currentNodeNum' [-Wunused-variable]
+        int currentNodeNum = n->from;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+20:59:14 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:96:6: warning: unused variable 'currentNodeNum' [-Wunused-variable]
+        int currentNodeNum = n->from;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:01:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:02:15 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:05:47 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:06:20 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:06:32 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:06:54 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:07:19 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:08:54 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:175:23: warning: implicit declaration of function 'Dijkstra' is invalid in C99 [-Wimplicit-function-declaration]
+                TourFlag ? Tour() : Dijkstra(0);
+                                    ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Undefined symbols for architecture x86_64:
+  "_Dijkstra", referenced from:
+      _main in Map.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Map] Error 1
+21:09:27 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:13:27 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:14:05 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:14:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:14:33 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:14:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:15:21 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:15:37 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:16:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:17:18 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:19:54 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:20:17 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:20:35 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:181:6: warning: unused variable 'j' [-Wunused-variable]
+        int j;
+            ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:20:56 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:21:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:187:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:21:59 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:187:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:22:29 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:22:45 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:22:59 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:25:02 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:25:29 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:30:36 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:30:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:31:12 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+21:31:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:31:47 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:32:13 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:32:22 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:41:45 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+21:45:02 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:00:09 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:02:08 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:02:33 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:05:21 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:05:43 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:06:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:188:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:06:34 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:07:02 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:183:16: error: use of undeclared identifier 'null'; did you mean 'nanl'?
+        if(heap[0] == null){
+                      ^~~~
+                      nanl
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/math.h:531:20: note: 'nanl' declared here
+extern long double nanl(const char *);
+                   ^
+../Map.c:183:13: warning: comparison of distinct pointer types ('node' (aka 'struct adjnode *') and 'long double (*)(const char *)') [-Wcompare-distinct-pointer-types]
+        if(heap[0] == null){
+           ~~~~~~~ ^  ~~~~
+../Map.c:191:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+2 warnings and 1 error generated.
+make: *** [Map.o] Error 1
+22:07:17 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:191:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:08:00 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:08:26 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:08:39 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:10:25 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*for(j = 0; j<10; j++){
+        ^
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+2 warnings generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:10:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:181:18: error: too many arguments to function call, expected 1, have 2
+                        puts("11-%d", i);
+                        ~~~~          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdio.h:262:1: note: 'puts' declared here
+int      puts(const char *);
+^
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*for(j = 0; j<10; j++){
+        ^
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+2 warnings and 1 error generated.
+make: *** [Map.o] Error 1
+22:11:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:189:2: warning: '/*' within block comment [-Wcomment]
+        /*for(j = 0; j<10; j++){
+        ^
+../Map.c:192:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+2 warnings generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:12:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:193:2: warning: '/*' within block comment [-Wcomment]
+        /*int j=0;
+        ^
+../Map.c:198:2: warning: '/*' within block comment [-Wcomment]
+        /*for(j = 0; j<10; j++){
+        ^
+../Map.c:201:2: warning: '/*' within block comment [-Wcomment]
+        /*int k;
+        ^
+3 warnings generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:14:34 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:185:6: error: use of undeclared identifier 'j'
+        for(j = 0; j<10; j++){
+            ^
+../Map.c:185:13: error: use of undeclared identifier 'j'
+        for(j = 0; j<10; j++){
+                   ^
+../Map.c:185:19: error: use of undeclared identifier 'j'
+        for(j = 0; j<10; j++){
+                         ^
+../Map.c:186:22: error: use of undeclared identifier 'j'
+                insertHeap(AdjList[j]);
+                                   ^
+4 errors generated.
+make: *** [Map.o] Error 1
+22:14:47 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:14:57 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:16:03 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:16:19 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:18:11 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:20:27 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:20:51 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:25:30 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:26:16 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:50:19 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:51:07 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:51:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:51:39 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:51:56 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:52:16 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:52:22 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:25 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:26 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:29 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:30 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+22:52:44 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:52:57 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:53:12 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+22:59:47 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:00:59 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:02:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:03:13 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:03:21 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:04:22 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:05:07 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:05:34 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:165:23: warning: comparison between pointer and integer ('int' and 'void *')
+        if(heap[parent]->from==NULL){
+           ~~~~~~~~~~~~~~~~~~^ ~~~~
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:07:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:08:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:08:55 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:09:24 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+23:09:24 **** Rebuild of configuration Debug for project Test ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex1.o ../ex1.c 
+gcc -o Test ex1.o 
+23:09:55 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:11:54 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+23:12:32 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:02:53 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:215:3: warning: implicit declaration of function 'printResult' is invalid in C99 [-Wimplicit-function-declaration]
+                printResult(Finish);
+                ^
+../Map.c:218:6: error: conflicting types for 'printResult'
+void printResult(int i){
+     ^
+../Map.c:215:3: note: previous implicit declaration is here
+                printResult(Finish);
+                ^
+1 warning and 1 error generated.
+make: *** [Map.o] Error 1
+00:04:59 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:180:18: error: use of undeclared identifier 'path'
+                int previous = path[i];
+                               ^
+1 error generated.
+make: *** [Map.o] Error 1
+00:05:19 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:185:9: warning: variable 'edgeNum' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                while(edge != NULL){
+                      ^~~~~~~~~~~~
+../Map.c:192:12: note: uninitialized use occurs here
+                PrintLeg(edgeNum);
+                         ^~~~~~~
+../Map.c:185:9: note: remove the condition if it is always true
+                while(edge != NULL){
+                      ^~~~~~~~~~~~
+                      1
+../Map.c:184:14: note: initialize the variable 'edgeNum' to silence this warning
+                int edgeNum;
+                           ^
+                            = 0
+1 warning generated.
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:07:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:08:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:08:59 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:09:29 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:09:55 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:10:28 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+00:13:32 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:11:33 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:201:8: error: use of undeclared identifier 'i'
+                for (i = 0; i < nV; i++) {
+                     ^
+../Map.c:201:15: error: use of undeclared identifier 'i'
+                for (i = 0; i < nV; i++) {
+                            ^
+../Map.c:201:23: error: use of undeclared identifier 'i'
+                for (i = 0; i < nV; i++) {
+                                    ^
+../Map.c:202:25: error: use of undeclared identifier 'i'
+                         node temp = AdjList[i];
+                                             ^
+warning: format specifies type 'int' but the argument has type '<dependent type>' [-Wformat]
+../Map.c:203:38: error: use of undeclared identifier 'i'
+                         printf("current location: %d, ", i);
+                                                          ^
+1 warning and 5 errors generated.
+make: *** [Map.o] Error 1
+01:11:51 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+../Map.c:212:7: error: redefinition of 'i'
+                int i;
+                    ^
+../Map.c:201:7: note: previous definition is here
+                int i;
+                    ^
+1 error generated.
+make: *** [Map.o] Error 1
+01:12:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:19:58 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:20:37 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:21:21 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:24:01 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:24:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:25:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:26:14 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:26:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:28:06 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:28:32 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:29:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:30:07 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:30:40 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+01:31:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+01:33:20 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:52:04 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:52:43 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:53:08 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+01:54:02 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:54:52 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+01:59:49 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:00:20 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:02:11 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:02:22 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:05:04 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:17:01 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:17:10 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:18:27 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:20:17 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:22:12 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:22:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:26:34 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:27:28 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:28:14 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:28:16 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:29:31 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:30:03 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:37:30 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:38:51 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:39:45 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:40:39 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:40:50 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:41:02 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:41:08 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+02:42:45 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:44:19 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:45:08 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:46:04 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:47:18 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+02:47:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+10:55:40 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+10:57:23 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+10:58:05 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+11:00:13 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+11:00:43 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+11:01:06 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+11:02:12 **** Incremental Build of configuration Debug for project Map ****
+make all 
+Building file: ../Map.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.o" -o "Map.o" "../Map.c"
+Finished building: ../Map.c
+ 
+Building target: Map
+Invoking: MacOS X C Linker
+gcc  -o "Map"  ./Map.o   
+Finished building target: Map
+ 
+11:27:08 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+11:27:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+12:59:43 **** Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+13:00:35 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.
+14:47:42 **** Incremental Build of configuration Debug for project Map ****
+make all 
+make: Nothing to be done for `all'.

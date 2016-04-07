@@ -1,0 +1,14 @@
+// J. Storer, 2011.
+// Brandeis Map Vertices.
+
+// Vertex format is: # label x y name
+// Coordinates (feet) are down and to the right from upper left corner.
+
+//Vertex with no edges to it - can use for testing error condition:
+0 XXX 45000 45000 "Black Hole"
+
+//Map Corners - can use for testing edge lengths:
+1 AAA 0 0 "Upper Left Corner of Map"
+2 BBB 5521 0 "Upper Right Corner Of Map"
+3 CCC 0 4369 "Lower Left Corner Of Map"
+4 DDD 5521 4369 "Lower Right Corner Of Map"

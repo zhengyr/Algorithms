@@ -1,0 +1,257 @@
+/*NAME AND DATE GOES HERE.*/
+/*Brandeis Map*/
+
+/*Standard system stuff - these are the ONLY ones that may be used.*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+/*Path to the map folder; may need to change this.*/
+#include "MapPATH.h"
+
+/*MAY NOT be modified, but should be viewed.*/
+#include "Map.h" /*Map data parameters, structures, and functions.*/
+
+/*MAY NOT be modified, and there is no need view them:*/
+#include "MapData.h"   /*Functions to input the map data.*/
+#include "MapInput.h"  /*Functions to get user input.*/
+#include "MapOutput.h" /*Functions to produce output.*/
+
+/*Use this to get the time to travel along an edge.*/
+#define EdgeCost(X) ( (TimeFlag) ? Time(X) : Elength[X] )
+
+/*Use this to print a leg of a route or tour.*/
+void PrintLeg(int edge);
+
+/***************************************************************************************/
+/*GRAPH ADJACENCY LIST DATA STRUCTURE                                                  */
+/***************************************************************************************/
+typedef struct adjnode {
+	int edgeNumber;
+	int from;
+	int to;
+	int cost;
+	struct adjnode *next;
+} adj;
+typedef adj *node;
+
+node new_node(int en, int fr, int t, int leg) {
+	node temp;
+	temp = (node) malloc(sizeof(adj));
+	if (temp == NULL) {
+		printf("Malloc for a new position failed.");
+		exit(1);
+	}
+	temp->edgeNumber = en;
+	temp->from = fr;
+	temp->to = t;
+	if (TimeFlag) {
+		temp->cost = Time(en);
+	} else {
+		temp->cost = leg;
+	}
+	temp->next = NULL;
+	return temp;
+}
+node AdjList[MaxVertex];
+void insertEdge(int i, int fr, int t, int leg) {
+	node n = new_node(i, fr, t, leg);
+	if (AdjList[fr] == NULL) {
+		AdjList[fr] = n;
+	} else {
+		node temp = AdjList[fr];
+		AdjList[fr] = n;
+		n->next = temp;
+	}
+}
+void constructAdjList() {
+	int i;
+	for (i = 0; i < nE; i++) {
+		insertEdge(i, Estart[i], Eend[i], Elength[i]);
+	}
+}
+/***************************************************************************************/
+/*HEAP DATA STRUCTURE                                                                  */
+/***************************************************************************************/
+int totalCost[MaxVertex];
+int heapDataNumber = 0;
+node heap[MaxVertex];
+void percUp(int i) {
+	if (i == 0) {
+		return;
+	}
+	int parent = (i - 1) / 2;
+	int parentVertexNum = heap[parent]->from;
+	int currentVertexNum = heap[i]->from;
+	if (totalCost[parentVertexNum] > totalCost[currentVertexNum]) {
+		node temp = heap[parent];
+		heap[parent] = heap[i];
+		heap[i] = temp;
+		percUp(parent);
+	}
+
+}
+void insertHeap(node n) {
+	if (n == NULL) {
+		return;
+	}
+	heap[heapDataNumber] = n;
+	int i = heapDataNumber;
+	heapDataNumber++;
+	percUp(i);
+}
+void percDown(int i) {
+	int parent = i;
+	int left = 2 * i + 1;
+	int right = 2 * i + 2;
+	if ((right >= heapDataNumber) && (left >= heapDataNumber)) {
+		return;
+	} else if (right >= heapDataNumber) {
+		i = left;
+	} else {
+		if (totalCost[heap[left]->from] <= totalCost[heap[right]->from]) {
+			i = left;
+		} else {
+			i = right;
+		}
+	}
+	if (totalCost[heap[parent]->from] > totalCost[heap[i]->from]) {
+		node temp = heap[parent];
+		heap[parent] = heap[i];
+		heap[i] = temp;
+		percDown(i);
+	}
+}
+node deleteMin() {
+	if (heapDataNumber == 0) {
+		return NULL;
+	}
+	node min = heap[0];
+	heapDataNumber--;
+	heap[0] = heap[heapDataNumber];
+	if (heapDataNumber > 0) {
+		percDown(0);
+	} else {
+		heap[0] = NULL;
+	}
+	return min;
+}
+int search(node n) {
+	int vertexNumber = n->from;
+	int j;
+	for (j = 0; j < heapDataNumber; j++) {
+		if (heap[j]->from == vertexNumber) {
+			return j;
+		}
+	}
+	return -1;
+}
+void delete(node n) {
+	if (n == NULL) {
+		return;
+	}
+	int position = search(n);
+	if (position == -1) {
+		return;
+	}
+	heapDataNumber--;
+	heap[position] = heap[heapDataNumber];
+	heap[heapDataNumber] = NULL;
+	if (heapDataNumber == 0) {
+		return;
+	}
+	int parent = (position - 1) / 2;
+
+	if (totalCost[heap[position]->from] > totalCost[heap[parent]->from]) {
+		percUp(position);
+	} else {
+		percDown(position);
+	}
+}
+/***************************************************************************************/
+/*Dijkstra Algorithm                                                                   */
+/*DijkstraFlag=1 to supress output when Dijkstra is called from tour code.)            */
+/***************************************************************************************/
+int path[MaxVertex];
+void printResult(int i){
+	if(i == Begin){
+		return;
+	}else{
+		int previous = path[i];
+		printResult(previous);
+		node edge = AdjList[previous];
+		int edgeNum = -1;
+		while(edge != NULL){
+			if(edge->to == i){
+				edgeNum = edge->edgeNumber;
+				break;
+			}
+			edge = edge->next;
+		}
+		PrintLeg(edgeNum);
+	}
+
+}
+void Dijkstra(int DijkstraFlag) {
+	if (DijkstraFlag == 1) {
+		return;
+	} else {
+		constructAdjList();
+		int marked[nV];
+		int i;
+		for (i = 0; i < nV; i++) {
+			marked[i] = -1;
+			totalCost[i] = InfiniteCost;
+			path[i] = -1;
+			insertHeap(AdjList[i]);
+		}
+		totalCost[Begin] = 0;
+		delete(AdjList[Begin]);
+		insertHeap(AdjList[Begin]);
+		int unmarked = nV;
+		puts("DDD");
+		printf("%d       AAAAAA", heap[heapDataNumber-1]->cost);
+		while (unmarked > 0) {
+			node v = deleteMin();
+			if(marked[v->from]==1){
+				continue;
+			}
+			unmarked--;
+			marked[v->from]= 1;
+			while(v != NULL){
+				if(marked[v->to]!=1){
+					int calculatedcost = totalCost[v->from] + v->cost;
+					if(totalCost[v->to]>calculatedcost){
+						totalCost[v->to] = calculatedcost;
+						delete(v);
+						insertHeap(v);
+						path[v->to] = v->from;
+					}
+				}
+				v = v->next;
+			}
+
+		}
+		printResult(Finish);
+	}
+}
+
+/***************************************************************************************/
+/*CAMPUS TOUR                                                                          */
+/***************************************************************************************/
+#include "Tour.h"
+
+/***************************************************************************************/
+/*MAIN PROGRAM (don't modify)                                                          */
+/***************************************************************************************/
+int main() {
+	GetVertices();
+	GetEdges();
+	while (GetRequest()) {
+		RouteOpen();
+		TourFlag ? Tour() : Dijkstra(0);
+		RouteClose();
+	}
+	return (0);
+}

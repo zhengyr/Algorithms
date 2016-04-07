@@ -1,0 +1,18 @@
+/*
+ * Test.cpp
+ *
+ *  Created on: Nov 17, 2015
+ *      Author: zhengyr
+ */
+
+#include "Test.h"
+
+Test::Test() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Test::~Test() {
+	// TODO Auto-generated destructor stub
+}
+
